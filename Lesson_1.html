@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>coords</title>
+	<title>Таблица HTML</title>
 </head>
 <body>
-<a href="#"><img ismap="ismap" src="cards.jpg" width="1000" height="500" usemap="#1" border="0" ></a>
-<map name="1">
-<area shape="poly" coords="296,442,402,139,675,206,582,495" alt="Туз червей" title="Туз червей" href="page1.html" />
-<area shape="poly" coords="207,110,351,271,400,131,635,186,681,168,519,0" alt="Туз пики" title="Туз пики" href="page1.html" />
+
+<table border="1" cellspacing="20" cellpadding="16" width="450">
+	<tr>
+		<th>Заголовок</th>
+		<th rowspan="2">Заголовок</th>
+		<th colspan="2">Заголовок</th>
+	</tr>
+	<tr>
+		<td style="background-color: gray; color: white">ячейка 1,первый ряд</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr height="100">
+		<td align="right">Ячейка 1, второй ряд</td>
+		<td valign="top">Ячейка 2, второй ряд</td>
+		<td valign="bottom">Ячейка 3, третий ряд</td>
+		<td valign="middle">Ячейка 4, четвертый ряд</td>
+	</tr>
 </body>
+</table>
 </html>
+<!-- colspan="" – определяет объединение ячеек по горизонтали.
+rowspan="" – определяет объединение ячеек по вертикали. -->
