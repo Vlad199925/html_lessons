@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Таблица HTML</title>
+
+<title>Один из возможных вариантов HTML формы</title>
 </head>
 <body>
-
-<table border="1" cellspacing="20" cellpadding="16" width="450">
-	<tr>
-		<th>Заголовок</th>
-		<th rowspan="2">Заголовок</th>
-		<th colspan="2">Заголовок</th>
-	</tr>
-	<tr>
-		<td style="background-color: gray; color: white">ячейка 1,первый ряд</td>
-		<td></td>
-		<td></td>
-	</tr>
-	<tr height="100">
-		<td align="right">Ячейка 1, второй ряд</td>
-		<td valign="top">Ячейка 2, второй ряд</td>
-		<td valign="bottom">Ячейка 3, третий ряд</td>
-		<td valign="middle">Ячейка 4, четвертый ряд</td>
-	</tr>
+<form name="f1" method="post" action="https://html.com/attributes/area-shape/">
+<input name="link" type="hidden" value="index.php" />
+Логин: <br />
+<input name="login" type="text" size="25" maxlength="30" value="" /> <br />
+Пароль: <br />
+<input name="pd" type="password" size="25" maxlength="30" value="" /> <br />
+<input name="remember" type="checkbox" value="" /> 
+Запомнить <br />
+<textarea name="имя" id="имя" cols="50" rows="8">Введите сюда ваш комментарий.</textarea>
+<div><input type="submit" name="enter" value="Вход" /> </div>
+<select name="menu" size="5" multiple="multiple">
+	<option value="first">Первая позиция</option>
+	<option selected="selected">Вторая позиция</option>
+	<option value="third">Третья позиция</option>
+	<option value="fourth">Четвёртая позиция</option>
+</select>
+<br />
+</form>
+<form name="Голосование" method="post" action="page2.html">
+<input type="checkbox" name="cifra" value="1">1 <br />
+<input type="checkbox" name="cifra" value="">2 <br />
+<input type="checkbox" name="cifra" value="">3 <br />
+<input type="checkbox" name="cifra" value="">4 <br />
+<input type="submit"  name="accept" value="OK">
+<input type="reset" value="Reset">
+<br />
+<input type="radio" name="Sex" value="Мужской" checked="checked" /> М <br />
+<input type="radio" name="Sex" value="Женский" checked="checked" /> Ж <br />
+Прикрепить файл: <br />
+<input type="file" name="send_file" size="30" maxlength="60"  />
 </body>
-</table>
+</form>
 </html>
-<!-- colspan="" – определяет объединение ячеек по горизонтали.
-rowspan="" – определяет объединение ячеек по вертикали. -->
