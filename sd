@@ -1,0 +1,47 @@
+[33mcommit d7b66e042c9ea48ce6354f9e998d01fcd59e08c7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 13:55:38 2020 +0400
+
+    source H20. Horizontal & vertical lines
+
+[33mcommit 1575862231f79c5384032a609d9bcf79fd05bc1b[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 13:27:36 2020 +0400
+
+    block,pharagraph,whitespace
+
+[33mcommit 33f315d6c588e792bf3a55459c15b161893b5610[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 13:10:49 2020 +0400
+
+    Align,indent & <br />
+
+[33mcommit 01f6b31b4ee0ac5ea31eabf492ef832c70641341[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 12:36:02 2020 +0400
+
+    html text background color
+
+[33mcommit a7e2364d9db7187585860bd988ff353a87052825[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 10:38:24 2020 +0400
+
+    HTML text formatting
+
+[33mcommit a344f40b7cbfdfa6a04e21ce93d3aea53fa9eacb[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Thu Jul 2 11:55:47 2020 +0400
+
+    html titles
+
+[33mcommit b5d285935403f95e2bda682c8f6182cbcc6000a6[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Wed Jul 1 20:00:24 2020 +0400
+
+    have removed while space
+
+[33mcommit 6e891924b5da2b86d23b38e0c6d43a9c002a8c66[m
+Author: Vlad <vlad.almukov@mail.ru>
+Date:   Wed Jul 1 19:53:23 2020 +0400
+
+    Beginning of project
