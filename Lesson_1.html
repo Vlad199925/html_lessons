@@ -1,39 +1,83 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="stili.css">
-		<title>Front end developer</title>
-		<style type="text/css">
-			h1 {
-				font-size: 120%;
-				font-family: Verdana, Arial, Helvetica, sans-serif;
-				color: #336;
-				}
-				p.interval {
-				line-height: 3;
-				}
-		</style>
-	</head>
-	<body>
-		<h3>Front end developer</h3>
-		<p> <span class = "qq">F</span>rontend-разработчик – это программист, разрабатывающий внешнюю часть сайта – пользовательский интерфейс. Он отвечает за корректное отображение и работу ресурса во всех браузерах и на всех устройствах. Благодаря ему страницы оживают и обретают интерактивность: переходы, анимация, выпадающие меню, выезжающие окна и другие приколюхи.
-		</p>
-		<h1>Hello, world!</h1>
-		<h1 style="font-size: 120%;  color: red;">Hello, world!</h1 >
+<head>
+	<title>Таблица цветов</title>
+	<style type="text/css">
+		th {
+			background-color: #ffa07a;
+			text-align: center;
+		    font-family: Arial, sans-serif;
+		    padding-right: 10px;
+		    padding-left: 10px;
+		    padding-bottom: 10px;
+		    padding-top: 10px;
+		    color:White;
+			}
+		
+			table {
+    		border-spacing: 0;
+			}
+			tr:nth-child(odd) {
+			background: #C0C0C0;
+		  	font-family: Arial, sans-serif;
+			}
+			tr:nth-child(even) {
+			background: #BC8F8F;
+			font-family: Arial, sans-serif;
+			}
+			td{
+			padding-right: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			}
+	</style>	
+</head>
+<body>
+	<table>	
+		<thead>
+			<tr>
+				<th>Марка,модель.</th>
+				<th>Габариты.</th>
+				<th>Год выпуска.</th>
+				<th>Цвет.</th>
+				<th>Цена.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Chevrolet Impala</td>
+				<td>qqqqqqqqqqqq</td>
+				<td>wwwwwwwwwwww</td>
+				<td>eeeeeeeeeeee</td>
+				<td>rrrrrrrrrrrr</td>
+			</tr>
+			<tr>
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+			<tr>
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+			<tr>
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+		</tbody>
 
-<h1 style="color: Green;">Асуанская плотина</h1>
-<p class="interval">qwerqwerqwer qrqwerqwerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p>
-
-	</body>
+	</table>
+	<!--  задание - 1 столбец: марка, модель. 2 столбец объем 3 год выпуска 4 цвет 5 цена.
+	В каждой ячейке отступ 10 px все буквы нужно сделать одним цветом сделать header открыть тег стайл добавить правила -->
+</body>
 </html>
-<!-- Что такое стиль? - Набор правил форматирования эелментов веб-страницы.
-	Как расшифровывается аббревиатура CSS - Cascading Stylee Sheets
-	Требуется задать цвет заголовка зелёным. Какое стилевое свойство подойдет для этой цели? - color
-
-	Кэшем называется специальное место на локальном компьютере пользователя, куда браузер сохраняет файлы при первом обращении к сайту. При следующем обращении к сайту эти файлы уже не скачиваются по сети, а берутся с локального диска. Такой подход позволяет существенно повысить скорость загрузки веб-страниц.
-
-	Централизованное хранение
-Стили, как правило, хранятся в одном или нескольких специальных файлах, ссылка на которые указывается во всех документах сайта. Благодаря этому удобно править стиль в одном месте, при этом оформление элементов автоматически меняется на всех страницах, которые связаны с указанным файлом. Вместо того чтобы модифицировать десятки HTML-файлов, достаточно отредактировать один файл со стилем и оформление нужных документов сразу же поменяется.
-
-Внутренние стили рекомендуется применять на сайте ограниченно или вообще отказаться от их использования. Дело в том, что добавление таких стилей увеличивает общий объём файлов, что ведет к повышению времени их загрузки в браузере, и усложняет редактирование документов для разработчиков.
