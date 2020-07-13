@@ -1,0 +1,28 @@
+body {
+font-family: Arial, Verdana, sans-serif;
+background-color: #f0f0f0;
+font-size: #f0f0f0;
+color:Green;
+}
+h3 {
+	color: #a52a2a;
+	font-size: 24pt;
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+
+
+}
+p {
+	text-align: justify;
+	margin-left: 60px;
+	margin-right: 10px;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.qq {
+	color: Green;
+	font-size: 200%;
+	font-family: Georgia, Times, serif;
+				}

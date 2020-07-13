@@ -1,10 +1,116 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Lesson JavaScript</title>
+	<title>Таблица цветов</title>
+	<style type="text/css">
+		th {
+			background-color: #ffa07a;
+			text-align: center;
+		    font-family: Arial, sans-serif;
+		    padding-right: 10px;
+		    padding-left: 10px;
+		    padding-bottom: 10px;
+		    padding-top: 10px;
+		    color:White;
+			}
+		
+			table {
+    		border-spacing: 0;
+			}
+			tr:nth-child(odd) {
+			background: #C0C0C0;
+		  	font-family: Arial, sans-serif;
+			}
+			tr:nth-child(even) {
+			background: #BC8F8F;
+			font-family: Arial, sans-serif;
+			}
+			td{
+			padding-right: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			}
+	</style>	
 </head>
 <body>
-<script src="JavaScript.js"></script>
+	<script src="Javascript.js"></script>
+	<table>	
+		<thead>
+			<tr>
+				<th>Марка,модель.</th>
+				<th>Габариты.</th>
+				<th>Год выпуска.</th>
+				<th>Цвет.</th>
+				<th>Цена.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr onclick="changeColor(this)">
+				<td>Chevrolet Impala</td>
+				<td>qqqqqqqqqqqq</td>
+				<td>wwwwwwwwwwww</td>
+				<td>eeeeeeeeeeee</td>
+				<td>rrrrrrrrrrrr</td>
+			</tr>
+			<tr onclick="changeColor(this)">
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+			<tr onclick="changeColor(this)">
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+			<tr onclick="changeColor(this)">
+				<td>Chevrolet Impala</td>
+				<td>Dodge Challenger</td>
+				<td>De Lorean DMC-12</td>
+				<td>Audi 80 B2</td>
+				<td>Ваз-21099</td>
+			</tr>
+		</tbody>
+
+	</table>
+	<script type="text/javascript">
+		let car = new Object();
+		car = {
+			color: "red",
+			age: 1980
+		};
+		console.log(car);
+		class myCar {
+			constructor(wheels,engine,color,year) {
+				this.wheels = wheels;
+				this.engine = engine;
+				this.color = color;
+				this.year = year;
+			}
+			info() {
+				console.log(this.wheels + " " + this.color + " " +this.year);
+
+			}
+			setyear(year) {
+				this.year = year;
+
+			}
+
+		}
+
+		let ccar = new myCar(15,"dizel","red",1980);
+		ccar.setyear(2000); 
+		ccar.info();
+
+
+	</script>
+	<!--  задание - 1 столбец: марка, модель. 2 столбец объем 3 год выпуска 4 цвет 5 цена.
+	В каждой ячейке отступ 10 px все буквы нужно сделать одним цветом сделать header открыть тег стайл добавить правила -->
+	<!-- У объекта есть три свойства: Полиморфизм,Наследование,инкапсуляция. Прочитать. -->
 </body>
 </html>
