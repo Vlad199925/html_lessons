@@ -1,20 +1,36 @@
 //var cell = document.getElementsByTagName("td");
-function changeColor (row)
+function changeColor ()
 { 
-	var r = row.getElementsByTagName("td");
+	var r = document.getElementsByTagName("tr");
 	console.log(r);
-	// row.style.backgroundColor = "red";
-		for (var i = 0; i < r.length; i++) {
-			r[i].style.backgroundColor = "red";
-
-		}
+	for (var i = 0; i<r.length; i++) {
+		r[i].style.backgroundColor = "red";
+	
+		}	
+	if (r.style.backgroundColor == '#ff0000') {
+		return r.style.backgroundColor = '#0000ff';
+	}
 }
- 
-	//  for (var i = 0; i < cell.length; i++) {
-	// 	cell[i].onclick = function (easy) {
-	// 		easy.target.style.background = "lime";
-	// 	}
-	// }
+function change ()
+{ 
+	var back = "#ececf4";
+	var r = document.getElementById("4");
+	console.log(r);
+	r.style.background = "#BC8F8F";
 
- // window.onload = changeColor(r); 
-// смена цветов с заданного на цвет по умолчанию.
+ 	var r = document.getElementById("3");
+	console.log(r);
+	r.style.background = "#C0C0C0";
+
+	var r = document.getElementById("2");
+	console.log(r);
+	r.style.background = "#BC8F8F";
+
+	var r = document.getElementById("1");
+	console.log(r);
+	r.style.background = "#C0C0C0";
+	
+	}
+
+
+	

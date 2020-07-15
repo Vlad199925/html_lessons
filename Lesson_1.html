@@ -32,6 +32,11 @@
 			padding-bottom: 10px;
 			padding-top: 10px;
 			}
+			.knopka {
+				position: absolute;
+				right: 75%;
+				bottom: 65%;
+			}
 	</style>	
 </head>
 <body>
@@ -47,34 +52,35 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr onclick="changeColor(this)">
+			<tr onclick="changeColor(this)" id="1">
 				<td>Chevrolet Impala</td>
 				<td>qqqqqqqqqqqq</td>
 				<td>wwwwwwwwwwww</td>
 				<td>eeeeeeeeeeee</td>
 				<td>rrrrrrrrrrrr</td>
 			</tr>
-			<tr onclick="changeColor(this)">
+			<tr onclick="changeColor(this)" id="2">
 				<td>Chevrolet Impala</td>
 				<td>Dodge Challenger</td>
 				<td>De Lorean DMC-12</td>
 				<td>Audi 80 B2</td>
 				<td>Ваз-21099</td>
 			</tr>
-			<tr onclick="changeColor(this)">
+			<tr onclick="changeColor(this)" id="3">
 				<td>Chevrolet Impala</td>
 				<td>Dodge Challenger</td>
 				<td>De Lorean DMC-12</td>
 				<td>Audi 80 B2</td>
 				<td>Ваз-21099</td>
 			</tr>
-			<tr onclick="changeColor(this)">
+			<tr onclick="changeColor(this)" id="4">
 				<td>Chevrolet Impala</td>
 				<td>Dodge Challenger</td>
 				<td>De Lorean DMC-12</td>
 				<td>Audi 80 B2</td>
 				<td>Ваз-21099</td>
 			</tr>
+			<input type="button" onclick="change()" value="Back" align="center" size="10" class="knopka">
 		</tbody>
 
 	</table>
