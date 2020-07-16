@@ -109,9 +109,47 @@
 
 		}
 
-		let ccar = new myCar(15,"dizel","red",1980);
+		let ccar = new myCar(15,"diesel","red",1980);
 		ccar.setyear(2000); 
 		ccar.info();
+
+
+
+		var profession = function (Name,salaryInUsd) {
+			this.Name = Name;
+			this.salaryInUsd = salaryInUsd;
+		}
+		profession.prototype.info = function () {
+			console.log("This profession is call " + this.Name + ", average earning in Moscow $" + this.salaryInUsd);	
+		}
+		profession.prototype.SayGoodBye = function () {
+			console.log("Goodbye");
+		}
+		var profession_1 = new profession("doctor",1000,"heal people");
+		profession_1.info();
+
+		function developer (Name,salaryInUsd,appointment) {
+			profession.call(this,Name,salaryInUsd);
+			this.appointment = appointment;
+		}
+		developer.prototype = Object.create(profession.prototype);
+		developer.prototype.constructor = developer;
+		developer.prototype.SayHello = function () {
+			alert("Hello");
+		}
+		developer.prototype.info = function () {
+			console.log("This profession is call " + this.Name + ", average earning in Moscow $" + this.salaryInUsd + ", type of activity is " + this.appointment);
+		}
+		var developer1 = new developer ("Front End developer",2000,"coding");
+
+		developer1.SayHello();
+		developer1.info();
+		developer1.SayGoodBye();
+		
+
+
+
+		
 
 
 	</script>

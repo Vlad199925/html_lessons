@@ -13,7 +13,6 @@ function changeColor ()
 }
 function change ()
 { 
-	var back = "#ececf4";
 	var r = document.getElementById("4");
 	console.log(r);
 	r.style.background = "#BC8F8F";
