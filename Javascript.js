@@ -1,43 +1,25 @@
-console.log ('Request data')
-const p = new Promise (function(resolve,reject){
-    setTimeout(()=>{
-        console.log('Preparing Data')
-        const PersonInfo = {
-            name: "Viktor" ,
-            gender: "male"
-        }
-         resolve (PersonInfo);
-    },2000)
+var numbers = [1, 5342, 42, 3, 2, 5];
+var words = ["one","word","car","dsdqweqwesadsd","ubersupermegaultra"];
+
+numbers.forEach((n,i,numbers)=>{
+    console.log(n%2=='0')
 })
-    p.then(function(info){
-        return new Promise (function(resolve,reject){
-            setTimeout(()=>{
-                haveJob = true;
-                resolve(info);
-            },2000)
-        })
+
+let newWords = words.filter((n)=>{
+    return n.length === 3; 
 })
-    .then(function (TotallyInfo){
-        console.log ("Data received", TotallyInfo);
-        TotallyInfo.age = 101;
-        return TotallyInfo;
-    })
-    .then(ModifiedData => {
-        console.log ("Modified", ModifiedData);
-    })
-    .catch(function(err){
-        console.log ("Error", err);
-    })
+console.log (newWords);
 
-    .finally (()=>console.log('Finally'));
+let NewNumbers = numbers.map((number)=>{
+    return number*2 
+})
+console.log(NewNumbers);
 
-    const sleep = ms => 
-    {return new Promise (resolve => {setTimeout(()=>
-        resolve(), ms)
-    })
-}
-sleep(5000).then (()=> console.log ('After 5 sec'));
+let summary = numbers.reduce((accumulate,n)=>{
+    return accumulate+n;
+},1000)
+console.log(summary);
 
-Promise.all([sleep(10000).then(()=> console.log ("..qweqwe")),])
-
-
+let reverse = numbers.reverse();
+console.log(reverse);
+// FIne new functions применить их на практике (разбиение массива).
